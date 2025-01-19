@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import edash.utils.EnvConfig;
-
+ 
 public class DatabaseConnection {
 	private static Connection connection;
 	

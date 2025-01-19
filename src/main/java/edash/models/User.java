@@ -24,6 +24,6 @@ public class User {
 	public String getRole() { return role; }
 	
 	public void setId(Long id) { this.id = id; }
-	public void setName(String username) { this.username = username; }
-	public void sertRole(String role) { this.role = role; }
+	public void setUsername(String username) { this.username = username; }
+	public void setRole(String role) { this.role = role; }
 }

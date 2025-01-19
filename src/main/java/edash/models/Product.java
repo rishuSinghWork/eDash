@@ -47,5 +47,5 @@ public class Product {
 	public void setCategory(String category) { this.category = category; }
 	public void setStock(int stock) { this.stock = stock; }
 	public void setPrice(double price) { this.price = price; }
-	public void setSupplier(Long supplierId) {this.supplierId = supplierId; }
+	public void setSupplierId(Long supplierId) {this.supplierId = supplierId; }
 }
