@@ -1,0 +1,29 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="eDashPU">
+        <!-- JPA Provider -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Entities -->
+        <class>edash.models.Product</class>
+        <class>edash.models.Supplier</class>
+        <class>edash.models.Order</class>
+        <class>edash.models.User</class>
+        <class>edash.models.Message</class>
+        <class>edash.models.ChatRoom</class>
+
+        <!-- JDBC Properties -->
+        <properties>
+            <!-- Connection Settings -->
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/e_dash_db" />
+            <property name="jakarta.persistence.jdbc.user" value="postgres" />
+            <property name="jakarta.persistence.jdbc.password" value="Reeshu@24" />
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+            <!-- Hibernate Settings -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>
